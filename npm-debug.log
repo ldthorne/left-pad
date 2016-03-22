@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.14.20
+3 info using node@v4.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/DanielThorne/Desktop/allFullstack/left-pad',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/DanielThorne/.npm/left-pad/0.0.3/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/DanielThorne/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/DanielThorne/.npm/left-pad/0.0.3/package.tgz',
+10 verbose tar pack   '/Users/DanielThorne/Desktop/allFullstack/left-pad' ]
+11 verbose tarball /Users/DanielThorne/.npm/left-pad/0.0.3/package.tgz
+12 verbose folder /Users/DanielThorne/Desktop/allFullstack/left-pad
+13 info prepublish left-pad@0.0.3
+14 verbose addLocalTarball adding from inside cache /Users/DanielThorne/.npm/left-pad/0.0.3/package.tgz
+15 verbose correctMkdir /Users/DanielThorne/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd left-pad@0.0.3
+17 verbose afterAdd /Users/DanielThorne/.npm/left-pad/0.0.3/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/DanielThorne/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/DanielThorne/.npm/left-pad/0.0.3/package/package.json written
+20 silly publish { name: 'left-pad',
+20 silly publish   version: '0.0.3',
+20 silly publish   description: 'Replaces the no longer existing left-pad',
+20 silly publish   main: 'index.js',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   author: { name: 'Leon Daniel Thorne', email: 'ldthorne@brandeis.edu' },
+20 silly publish   license: 'ISC',
+20 silly publish   dependencies: { lodash: '^4.6.1' },
+20 silly publish   gitHead: '8c2c9d1d77aa3adb0e3f4604c8c4dbb4a79c0115',
+20 silly publish   readme: 'ERROR: No README data found!',
+20 silly publish   _id: 'left-pad@0.0.3',
+20 silly publish   _shasum: '173b00c5ddedca407bb34b4cac0abc337c51af60',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name left-pad
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/left-pad
+26 verbose publish registryBase https://registry.npmjs.org/
+27 silly publish uploading /Users/DanielThorne/.npm/left-pad/0.0.3/package.tgz
+28 verbose request uri https://registry.npmjs.org/left-pad
+29 verbose request sending authorization for write operation
+30 info attempt registry request try #1 at 6:33:08 PM
+31 verbose request using bearer token for auth
+32 verbose request id d047cda41f8d9b11
+33 http request PUT https://registry.npmjs.org/left-pad
+34 http 403 https://registry.npmjs.org/left-pad
+35 verbose headers { 'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '100',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Tue, 22 Mar 2016 22:33:08 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-atl6247-ATL',
+35 verbose headers   'x-cache': 'MISS',
+35 verbose headers   'x-cache-hits': '0',
+35 verbose headers   'x-timer': 'S1458685988.434980,VS0,VE310' }
+36 verbose request invalidating /Users/DanielThorne/.npm/registry.npmjs.org/left-pad on PUT
+37 error publish Failed PUT 403
+38 verbose stack Error: You do not have permission to publish 'left-pad'. Are you logged in as the correct user? : left-pad
+38 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+38 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+38 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+39 verbose statusCode 403
+40 verbose pkgid left-pad
+41 verbose cwd /Users/DanielThorne/Desktop/allFullstack/left-pad
+42 error Darwin 15.4.0
+43 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+44 error node v4.3.0
+45 error npm  v2.14.20
+46 error code E403
+47 error You do not have permission to publish 'left-pad'. Are you logged in as the correct user? : left-pad
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]

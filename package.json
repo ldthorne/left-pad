@@ -1,14 +1,18 @@
 {
-  "name": "left-pad",
+  "name": "left-pad-better",
   "version": "0.0.3",
   "description": "Replaces the no longer existing left-pad",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
   "author": "Leon Daniel Thorne <ldthorne@brandeis.edu>",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh:git@github.com:ldthorne/left-pad.git",
+  },
 }
